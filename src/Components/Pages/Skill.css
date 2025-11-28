@@ -1,0 +1,97 @@
+/* MAIN WRAPPER */
+.skill-page {
+  min-height: 100vh;
+  background: white;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.skill-header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.skill-header h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+    color: #008b8b;
+
+}
+
+.skill-header span {
+  color: #008b8b;
+}
+
+.skill-header p {
+  max-width: 600px;
+  margin: auto;
+  opacity: 0.8;
+  font-size: 1rem;
+  color: #008b8b;
+}
+
+/* Skills Grid */
+.skills-gallery {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+/* Card Design */
+/* When card rotates – change text color to white */
+/* .skill-card.rotate p {
+  color: white;
+} */
+
+.skill-card {
+  width: 180px;
+  height: 180px;
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+
+}
+
+.skill-card p {
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.9;
+    color: #008b8b;
+
+}
+
+/* -------------------------------------- */
+/* ✨ ADD THIS AT THE BOTTOM */
+/* -------------------------------------- */
+
+/* Animation Keyframes */
+@keyframes rotateCard {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Apply rotation only when .rotate class is ON */
+.skill-card.rotate {  
+  animation: rotateCard 4s linear infinite;
+}

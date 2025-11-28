@@ -1,0 +1,135 @@
+/* General layout */
+.home {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  color: #005f5f;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: white;
+  border-bottom: 1px solid #e0f7f7;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #008b8b;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #006666;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00a3a3;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 80px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1 1 450px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #033a3a;
+}
+
+.hero-content span {
+  color: #009999;
+}
+
+.hero-content h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.hero-content p {
+  max-width: 500px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #066;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #009999;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.cta-btn:hover {
+  background-color: #007777;
+  transform: translateY(-2px);
+}
+
+/* Hero Image */
+.hero-image {
+  flex: 1 1 400px;
+  text-align: center;
+  position: relative;
+   /* object-fit: cover;
+  object-position: bottom center; */
+}
+
+.hero-image img {
+  width: 270px;          /* fixed width */
+  height: 480px;         /* important - must add */
+  object-fit: cover;     /* now works */
+  object-position: bottom center;  /* moves face */
+  border-radius: 30px;
+  box-shadow: 0 8px 25px rgba(0, 128, 128, 0.2);
+  animation: floaty 5s ease-in-out infinite;
+  display: block;
+  margin: 0 auto;   
+  margin-top: 20px; 
+  border: 3px solid teal;     /* center properly */
+}
+
+@keyframes floaty {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+
+
+/* Footer */
+.home-footer {
+  background-color: #023b3b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,148 @@
+.education-page {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #e0ffff 0%, #ffffff 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #044f4f;
+  position: relative;
+}
+
+/* Header */
+.education-header {
+ text-align: center;
+  padding: 0px 10px;
+}
+
+
+.education-header h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+    color: #008b8b;
+
+}
+
+.education-header span {
+  color: #008b8b;
+}
+
+.education-header p {
+  max-width: 600px;
+  margin: auto;
+  opacity: 0.8;
+  font-size: 1rem;
+  color: #008b8b;
+}
+
+.education-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+
+
+/* Timeline Section */
+.timeline {
+  position: relative;
+  margin: 80px auto;
+  padding-left: 40px;
+  max-width: 700px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, #00b3b3, #b2f5ea);
+  border-radius: 10px;
+}
+
+/* Each Item */
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.timeline-item:nth-child(1) { animation-delay: 0s; }
+.timeline-item:nth-child(2) { animation-delay: 0.2s; }
+.timeline-item:nth-child(3) { animation-delay: 0.4s; }
+
+.timeline-dot {
+  position: absolute;
+  left: 20px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  background: #00b3b3;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 179, 179, 0.6);
+  z-index: 1;
+}
+
+.timeline-content {
+  background: white;
+  border: 1px solid #b2f0f0;
+  border-radius: 15px;
+  padding: 20px 25px;
+  margin-left: 40px;
+  box-shadow: 0 4px 15px rgba(0, 128, 128, 0.1);
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 128, 128, 0.2);
+}
+
+.timeline-content h3 {
+  color: #006666;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.timeline-content h4 {
+  color: #008b8b;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.timeline-content .year {
+  display: inline-block;
+  background-color: #00b3b3;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 0.95rem;
+  color: #044f4f;
+  line-height: 1.5;
+}
+
+/* Fade-up animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+.education-footer {
+  text-align: center;
+  background-color: #023b3b;
+  color: white;
+  padding: 20px;
+  font-size: 0.9rem;
+}

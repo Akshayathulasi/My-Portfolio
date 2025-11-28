@@ -1,0 +1,66 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.my-navbar {
+  background-color: linear-gradient(135deg, #008b8b, #20b2aa);   /* change color here */
+  padding: 10px 30px;
+}
+
+.my-navbar {
+  transition: background 0.3s ease;
+}
+
+.my-navbar.scrolled {
+  background: black !important;
+}
+
+nav.navbar {
+  background: linear-gradient(135deg, #008b8b, #20b2aa);
+  padding: 10px 40px;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+span1 {
+  color: #00ffff;   /* Cyan for "My" */
+}
+
+
+
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover,
+.space:hover {
+  color: #00ffff !important;
+  transform: scale(1.05);
+}
+
+.navbar-toggler {
+  filter: invert(1);  /* Makes toggle button visible on dark bg */
+}
+
+/* remove underline from Link */
+.space {
+  text-decoration: none !important;
+  color: white;
+}
+
+/* small screen fix */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+}
