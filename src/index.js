@@ -5,14 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 // 🛠 ADD THIS ↓
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-<HashRouter>
-  <App />
-</HashRouter>
-
+  <BrowserRouter basename='/My-Portfolio' >        {/* ✔ MUST wrap App */}
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </BrowserRouter>
 );
 
 reportWebVitals();
