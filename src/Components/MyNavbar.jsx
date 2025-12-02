@@ -10,7 +10,7 @@ const MyNavbar = () => {
     
 <nav class="navbar navbar-expand-lg my-navbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" style={{fontFamily:'initial',color:'white'}}><span1>My</span1><span2>PoRtFoLiO</span2></a>
+    <a class="navbar-brand" href="Home.jsx" style={{fontFamily:'initial',color:'white'}}><span1>My</span1><span2>PoRtFoLiO</span2></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
